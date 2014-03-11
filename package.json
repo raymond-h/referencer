@@ -8,7 +8,8 @@
     "postinstall": "bower install"
   },
   "keywords": [
-    "generator", "reference"
+    "generator",
+    "reference"
   ],
   "author": "Raymond Hammarling",
   "license": "MIT",
@@ -18,7 +19,8 @@
     "grunt-contrib-coffee": "~0.10.1",
     "grunt-coffeelint": "0.0.8",
     "load-grunt-tasks": "~0.3.0",
-    "grunt-contrib-less": "~0.9.0"
+    "grunt-contrib-less": "~0.9.0",
+    "grunt-contrib-watch": "~0.5.3"
   },
   "dependencies": {
     "express": "~3.4.8"

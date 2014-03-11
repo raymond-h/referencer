@@ -47,6 +47,19 @@ module.exports = (grunt) ->
 				no_tabs: level: 'ignore' # this is tab land, boy
 				indentation: value: 1 # single tabs
 
+		watch:
+			build:
+				files: ['src/**/*']
+				tasks: ['build']
+
+			'build-web':
+				files: ['assets/**/*']
+				tasks: ['build-web']
+
+			autoreload:
+				files: ['lib/**/*', 'built-assets/**/*']
+				options: livereload: yes
+
 	grunt.registerTask 'default', ['build', 'build-web']
 
 	grunt.registerTask 'build', ['coffee:build']
