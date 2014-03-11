@@ -1,0 +1,19 @@
+{
+  "name": "econapp",
+  "version": "0.1.0",
+  "authors": [
+    "Raymond Hammarling <raykay.rh@gmail.com>"
+  ],
+  "description": "A web application for economizing",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}
