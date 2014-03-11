@@ -57,7 +57,7 @@ module.exports = (grunt) ->
 				tasks: ['build-web']
 
 			autoreload:
-				files: ['lib/**/*', 'built-assets/**/*']
+				files: ['lib/**/*', 'built-assets/**/*', 'public/**/*', 'bower_components/**/*']
 				options: livereload: yes
 
 	grunt.registerTask 'default', ['build', 'build-web']
