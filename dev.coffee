@@ -6,4 +6,4 @@ w.on 'error', (err) -> console.error err.stack
 w.stdout.pipe process.stdout
 w.stderr.pipe process.stderr
 
-require './'
+require './index'

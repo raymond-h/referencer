@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Econapp</title>
+	<title>Referencer</title>
 
 	<script src="components/jquery/dist/jquery.min.js"></script>
 	<script src="scripts/knockout-3.0.0.js"></script>
@@ -14,9 +14,13 @@
 		<div id="contents">
 			<h1 class="title">Referencer</h1>
 			<p class="subtitle">The reference generator</p>
-			<p>Hello! This web app automatically generates references in Oxford style using a provided ISBN number to a book!</p>
+			<p>Hello! This web app automatically generates references in Oxford style using a provided ISBN number of a book!</p>
 			<p>
-				ISBN: <input type="text" name="isbn" id="isbnField">
+				ISBN: <input type="text" name="isbn" id="isbnField" data-bind='value: isbn, valueUpdate: "afterkeydown"'>
+				<input type="button" value="Look up" data-bind="click: lookUp, enable: isbn().length > 0">
+			</p>
+			<p>
+				Footnote: <code><span data-bind="html: footnote"></span></code>
 			</p>
 		</div>
 	</div>
